@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meu Portfólio</title>
+    <style>
+        /* Adicione seu código CSS aqui */
+ 	 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,800;1,300;1,800&display=swap');
+	
+
+        body {
+            background-color: black; /* cor de fundo preta */
+            color: rgb(84,160,33); /* cor de texto verde esmeralda */
+            font-family: 'Nunito', sans-serif; /* fonte Nunito */
+        }
+        .container {
+            margin: auto;
+            width: 80%;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed; /* menu fixo na tela */
+            right: 0;
+            top: 0;
+            width: 100%;
+            background-color: #222; /* cor de fundo do menu */
+        }
+        .menu a {
+            color: rgb(84,160,33);
+            text-decoration: none;
+            padding: 10px;
+        }
+        .menu a:hover {
+            color: #fff; /* cor de destaque do menu */
+        }
+        .banner {
+            display: flex;
+            align-items: center;
+            height: 300px;
+            margin-top: 40px; /* espaço entre o menu e o banner */
+        }
+        .banner img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .banner h1 {
+            font-size: 36px;
+        }
+        .banner p {
+            font-size: 18px;
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+	    
+        }
+        .social a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(84,160,33);
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .social a i {
+            font-size: 24px;
+            color: #222;
+            line-height: 40px;
+            text-align: center;
+		item-aling:center;
+
+        }
+        .section {
+            margin-top: 40px;
+        }
+        .section h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+        .section p {
+            font-size: 16px;
+            text-align: justify;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .projects img {
+            width: 100%;
+            height: auto;
+        }
+        .projects a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .projects a:hover {
+          color:#0f0;  
+        }
+        
+    </style>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+</head>
+<body>
+    <div class="container">
+        
+       <!-- Cabeçalho -->
+       <div class="menu">
+           <nav>
+               <a href="#inicio">Início</a>
+               <a href="#sobre">Sobre</a>
+               <a href="#projetos">Projetos</a>
+               <a href="#contato">Contato</a>
+           </nav>
+       </div>
+
+       <!-- Início -->
+       <div id="inicio" class="banner">
+           <img src="_img/logo.png" alt="Foto">
+           <div class="texto">	
+               <h1>Bem-vindo ao portfólio PrasinusProgramma.</h1>
+               <p>Meu nome é Felix Freitas Jr. Sou um desenvolvedor web.</p>
+           </div>
+       </div>
+
+       <!-- Redes sociais -->
+       <div class="social">
+           <a href="#"><i class="fi fi-brands-facebook"></i></a>
+           <a href="#"><i class="fi fi-brands-twitter"></i></a>
+           <a href="#"><i class="fi fi-brands-linkedin"></i></a>
+           <a href="#"><i class="fi fi-brands-github"></i></a>
+       </div>
+
+       <!-- Sobre -->
+       <div id="sobre" class="section">
+           <h2>Sobre mim</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis leo quis lorem tincidunt sollicitudin. Morbi vitae nisl ut nisi aliquet tincidunt. Quisque vitae quam et nisl sagittis luctus. Mauris vitae lacus sit amet leo ullamcorper malesuada. Praesent quis augue at lorem sagittis ullamcorper. Fusce euismod, lorem quis luctus tincidunt, lectus elit aliquet nisl, quis aliquam leo nisi id eros. Sed vitae nunc sit amet leo ultrices consequat. Donec quis lacus sit amet lorem sagittis tincidunt.</p>
+       </div>
+
+       <!-- Projetos -->
+       <div id="projetos" class="section">
+           <h2>Meus projetos</h2>
+           <div class="projects">
+               <a href="#"><img src="_img/site_estatico.png" alt="Site Estático"></a>
+               <a href="#"><img src="_img/site_dinâmico.png" alt="Site Dinâmico"></a>
+               <a href="#"><img src="_img/site_responsivo.png" alt="Site Responsivo"></a>
+               <a href="#"><img src="_img/site_gerenciável.png" alt="Site Gerenciável"></a>
+               <a href="#"><img src="_img/site_e-commerce.png" alt="Site e-commerce"></a>
+               <a href="#"><img src="_img/site_educacional.png" alt="Site educacional"></a>
+           </div>
+       </div>
+
+       <!-- Contato -->
+       <div id="contato" class="section">
+           <h2>Entre em contato</h2>
+           <form action="#" method="post">
+               <label for="nome">Nome:</label>
+               <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
+               <label for="email">E-mail:</label>
+               <input type="email" id="email" name="email" placeholder="Digite seu e-mail"><br>
+               <label for="mensagem">Mensagem:</label>
+               <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea><br>
+               <button type="submit">Enviar</button>
+           </form>
+       </div>
+
+    </div>
+
+    <script>
+        // Adicione seu código JavaScript aqui
+    </script>
+</body>
+</html>

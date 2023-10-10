@@ -109,7 +109,7 @@
             height: 100%;
             overflow: auto;
             background-color: rgba(0,0,0,0.9);
-filter: blur(2px);
+            filter: blur(2px);
         }
         
         .modal-content {
@@ -125,56 +125,54 @@ filter: blur(2px);
             right: 35px;
             color: #f1f1f1;
             font-size: 40px;
-filter: none;
+            filter: none;
         }
 
 
 
-.coin {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    perspective: 1000px;
-	transform-style: preserve-3d;
-	
+        .coin {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+	    }
 
-}
+        .coins {
+            display: flex;
+            justify-content: space-around; /* Isso adiciona espaço igual entre as moedas */
+        }
 
-.coins {
-    display: flex;
-    justify-content: space-around; /* Isso adiciona espaço igual entre as moedas */
-}
+        .side1, .side2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255,255,255);
+            border-radius: 50%;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+        }
 
-.side1, .side2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-	background-color: rgb(255,255,255);
-border-radius: 50%;
-display: flex;
-align-items:center;
-justify-content:center;
-}
+        .side1 img, .side2 img {
+            width: 60%;
+            height: 60%;
+            object-fit: contain;
+            backface-visibility:hidden;
+        }
+        .side1 {
+            transform: rotateY(0deg);
+        }
 
-.side1 img, .side2 img {
-    width: 60%;
-    height: 60%;
-    object-fit: contain;
-	backface-visibility:hidden;
-}
-.side1 {
-    transform: rotateY(0deg);
-}
+        .side2 {
+            transform: rotateY(-180deg);
+        }
 
-.side2 {
-    transform: rotateY(-180deg);
-}
+        @keyframes spin {
+            from { transform: rotateY(0deg); }
+            to { transform: rotateY(1turn); }
+        }
 
-@keyframes spin {
-    from { transform: rotateY(0deg); }
-    to { transform: rotateY(1turn); }
-}
-
-.coin:hover{
-    animation: spin 3s infinite linear;
-}
+        .coin:hover{
+            animation: spin 3s infinite linear;
+        }

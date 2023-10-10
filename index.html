@@ -1,168 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-    <link rel="stylesheet" href="_css/style.css">
-    <link rel="stylesheet" href="_css/style_form.css">
-    <title>BacoIpswich</title>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+        <link rel="stylesheet" href="_css/style.css">
+        <link rel="stylesheet" href="_css/style_form.css">
+        <title>BacoIpswich</title>
+    </head>
 
-<body>
-    <div id="main-content" class="container">
-        
-       <!-- Cabeçalho -->
-       <div class="menu">
-           <nav>
-               <a href="#inicio">Início</a>
-               <a href="#sobre">Sobre</a>
-               <a href="#projetos">Projetos</a>
-		<a href="#clientes">Clientes</a>
-               <a href="#contato">Contato</a>
-           </nav>
-       </div>
-
-       <!-- Início -->
-       <div id="inicio" class="banner">
-           <img src="_img/_galeria/logo.png" alt="Foto">
-           <div class="texto">	
-               <h1>Bem-vindo ao portfólio BacoIpswich.</h1>
-               <p>Descubra a inovação em cada pixel.</p>
-           </div>
-           
-       </div>
-
-       <hr size="1" width="100%" color="rgb(84,160,33)">
-
-    
-       <!-- Sobre -->
-       <div id="sobre" class="section">
-           <h2>Quem somos?</h2>
-           <p><strong>BacoIpswich</strong> é uma startup de desenvolvimento web que acredita no poder da tecnologia para transformar ideias em realidade. Nossa missão é fornecer soluções digitais personalizadas que ajudem nossos clientes a alcançar seus objetivos online.<br>
-            <br>
-            Nossa equipe é composta por profissionais talentosos e dedicados que trazem uma variedade de habilidades e experiências para a mesa. Trabalhamos juntos para criar sites estáticos, dinâmicos, responsivos, de gerenciamento, e-commerce e educacionais que não apenas atendem, mas superam as expectativas de nossos clientes.<br>
-            <br>
-            Além disso, estamos comprometidos em apoiar a próxima geração de desenvolvedores web. Oferecemos oportunidades para estudantes e freelancers aprimorarem suas habilidades, trabalharem em projetos do mundo real e construírem um portfólio impressionante.<br>
-            <br>
-            Na BacoIpswich, acreditamos que o sucesso vem da colaboração, inovação e dedicação incansável à excelência. Estamos sempre buscando novas maneiras de melhorar e expandir nossos serviços para melhor atender às necessidades de nossos clientes.</p>
-       </div>
-       <br>
-       <hr size="1" width="100%" color="rgb(84,160,33)" >
-       <!-- Projetos -->
-       <div id="projetos" class="section">
-           <h2>Meus projetos</h2>
-           <div class="projects">
-            <figure>
-               <img class="thumbnail" src="_img/_galeria/site_estatico.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
-               <figcaption>São páginas fixas que exibem o mesmo conteúdo para todos os usuários. Ideal para sites institucionais. O valor médio para desenvolvimento no Brasil é entre R$ 3 mil e R$ 5 mil.</figcaption>
-            </figure>
-            <figure>
-                <img class="thumbnail" src="_img/_galeria/site_dinâmico.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
-                <figcaption>Páginas que permitem interação do usuário, como blogs e redes sociais. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
-             </figure>
-             <figure>
-                <img class="thumbnail" src="_img/_galeria/site_responsivo.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
-                <figcaption>Adapta-se a diferentes tamanhos de tela, melhorando a experiência do usuário. O custo médio varia de R$ 1.500 a R$ 2.000</figcaption>
-             </figure>
-             <figure>
-                <img class="thumbnail" src="_img/_galeria/site_gerenciável.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
-                <figcaption>Permite o gerenciamento de conteúdo pelo usuário, como um CMS. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
-             </figure>
-             <figure>
-                <img class="thumbnail" src="_img/_galeria/site_e-commerce.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
-                <figcaption>Plataforma de venda online, como lojas virtuais. O custo médio varia de R$ 1.600 a R$ 12.000</figcaption>
-             </figure>
-             <figure>
-                <img class="thumbnail" src="_img/_galeria/site_educacional.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
-                <figcaption>Focado em educação, como plataformas EAD. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
-             </figure>
-           </div>
-           <div id="modal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
-       </div>
-
-<br>
-<hr size="1" width="100%" color="rgb(84,160,33)" >
-<div id="clientes" class="section">
-	<h2>Clientes</h2>
-<div class="coins"><!-- Clientes -->
-	
-	<!-- Primeiro círculo -->
-	<div class="coin"> 
-		<div class="side1">
-			<img src="_img/_clientes/fiocruz.png" alt="Logo 1">
-		</div>
-		<div class="side2">
-			<img src="_img/_clientes/fiotec.png" alt="Logo 2">
-		</div>
-	</div>
-
-	<!-- Segundo círculo -->
-	<div class="coin">
-		<div class="side1">
-			<img src="_img/_clientes/g4f.png" alt="Logo 3">
-		</div>
-		<div class="side2">
-			<img src="_img/_clientes/uniasselvi.png" alt="Logo 4">
-		</div>
-	</div>
-</div>
-</div>
-<br>
-<hr size="1" width="100%" color="rgb(84,160,33)" >
-       <!-- Contato -->
-       <div id="contato" class="section">
-           <h2>Entre em contato</h2>
-           <form class="form" id="meuFormulario" method="post" enctype="text/plain">
-    
-    
-        <label>
-            <input required="" placeholder="" type="text" class="input">
-            <span>Nome Próprio</span>
-        </label>
+    <body>
+        <div id="main-content" class="container">
             
-    <label>
-        <input required="" placeholder="" type="email" class="input">
-        <span>E-mail</span>
-    </label> 
+        <!-- Cabeçalho -->
+        <div class="menu">
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#clientes">Clientes</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+
+        <!-- Início -->
+        <div id="inicio" class="banner">
+            <img src="_img/_galeria/logo.png" alt="Foto">
+            <div class="texto">	
+                <h1>Bem-vindo ao portfólio BacoIpswich.</h1>
+                <p>Descubra a inovação em cada pixel.</p>
+            </div>
+        </div>
+
+        <hr size="1" width="100%" color="rgb(84,160,33)">
         
-    <label>
-        <input required="" type="tel" placeholder="" class="input" maxlength="15" onkeyup="formatarTelefone(this)" id="telefone">
-        <span>Contato</span>
-    </label>
-    <label>
-        <textarea required="" rows="3" placeholder="" class="input01" maxlength="1000"></textarea>
-        <span>message</span>
-    </label>
-    
-    <button class="fancy" type="submit">
-      <span class="top-key"></span>
-      <span class="text">Enviar</span>
-      <span class="bottom-key-1"></span>
-      <span class="bottom-key-2"></span>
-    </button>
-</form>
-       </div>
+        <!-- Sobre -->
+        <div id="sobre" class="section">
+            <h2>Quem somos?</h2>
+                <p><strong>BacoIpswich</strong> é uma startup de desenvolvimento web que acredita no poder da tecnologia para transformar ideias em realidade. Nossa missão é fornecer soluções digitais personalizadas que ajudem nossos clientes a alcançar seus objetivos online.<br>
+                <br>
+                Nossa equipe é composta por profissionais talentosos e dedicados que trazem uma variedade de habilidades e experiências para a mesa. Trabalhamos juntos para criar sites estáticos, dinâmicos, responsivos, de gerenciamento, e-commerce e educacionais que não apenas atendem, mas superam as expectativas de nossos clientes.<br>
+                <br>
+                Além disso, estamos comprometidos em apoiar a próxima geração de desenvolvedores web. Oferecemos oportunidades para estudantes e freelancers aprimorarem suas habilidades, trabalharem em projetos do mundo real e construírem um portfólio impressionante.<br>
+                <br>
+                Na BacoIpswich, acreditamos que o sucesso vem da colaboração, inovação e dedicação incansável à excelência. Estamos sempre buscando novas maneiras de melhorar e expandir nossos serviços para melhor atender às necessidades de nossos clientes.</p>
+        </div>
 
-    </div>
-<br>
-<div style="position: relative; z-index: 0;">
-  <hr size="1" width="100%" color="rgb(255,255,255)">
-</div>
+        <br>
+        <hr size="1" width="100%" color="rgb(84,160,33)">
 
-  <!-- Redes sociais -->
-       <div id="social" class="section">
+        <!-- Projetos -->
+        <div id="projetos" class="section">
+            <h2>Meus projetos</h2>
+                <div class="projects">
+                    <figure>
+                        <img class="thumbnail" src="_img/_galeria/site_estatico.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                        <figcaption>São páginas fixas que exibem o mesmo conteúdo para todos os usuários. Ideal para sites institucionais. O valor médio para desenvolvimento no Brasil é entre R$ 3 mil e R$ 5 mil.</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="thumbnail" src="_img/_galeria/site_dinâmico.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                        <figcaption>Páginas que permitem interação do usuário, como blogs e redes sociais. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="thumbnail" src="_img/_galeria/site_responsivo.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                        <figcaption>Adapta-se a diferentes tamanhos de tela, melhorando a experiência do usuário. O custo médio varia de R$ 1.500 a R$ 2.000</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="thumbnail" src="_img/_galeria/site_gerenciável.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                        <figcaption>Permite o gerenciamento de conteúdo pelo usuário, como um CMS. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="thumbnail" src="_img/_galeria/site_e-commerce.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                        <figcaption>Plataforma de venda online, como lojas virtuais. O custo médio varia de R$ 1.600 a R$ 12.000</figcaption>
+                    </figure>
+                    <figure>
+                        <img class="thumbnail" src="_img/_galeria/site_educacional.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                        <figcaption>Focado em educação, como plataformas EAD. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
+                    </figure>
+                </div>
+                <div id="modal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+        </div>
 
-<div class="social">
-    <a href="#"><i class="fi fi-brands-facebook"></i></a>
-    <a href="#"><i class="fi fi-brands-twitter"></i></a>
-    <a href="#"><i class="fi fi-brands-linkedin"></i></a>
-    <a href="#"><i class="fi fi-brands-github"></i></a>
-</div>
-<script src="_js/script.js"></script>
-</body>
+        <br>
+        <hr size="1" width="100%" color="rgb(84,160,33)">
+
+        <!-- Clientes -->
+        <div id="clientes" class="section">
+            <h2>Clientes</h2>
+                <div class="coins">
+                    
+                    <!-- Primeiro círculo -->
+                    <div class="coin"> 
+                        <div class="side1">
+                            <img src="_img/_clientes/fiocruz.png" alt="Logo 1">
+                        </div>
+                        <div class="side2">
+                            <img src="_img/_clientes/fiotec.png" alt="Logo 2">
+                        </div>
+                    </div>
+
+                    <!-- Segundo círculo -->
+                    <div class="coin">
+                        <div class="side1">
+                            <img src="_img/_clientes/g4f.png" alt="Logo 3">
+                        </div>
+                        <div class="side2">
+                            <img src="_img/_clientes/uniasselvi.png" alt="Logo 4">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <br>
+        <hr size="1" width="100%" color="rgb(84,160,33)">
+
+        <!-- Contato -->
+        <div id="contato" class="section">
+            <h2>Entre em contato</h2>
+                <form class="form" id="meuFormulario" method="post" enctype="text/plain">         
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Nome Próprio</span>
+                    </label>
+                    
+                    <label>
+                        <input required="" placeholder="" type="email" class="input">
+                        <span>E-mail</span>
+                    </label> 
+                
+                    <label>
+                        <input required="" type="tel" placeholder="" class="input" maxlength="15" onkeyup="formatarTelefone(this)" id="telefone">
+                        <span>Contato</span>
+                    </label>
+
+                    <label>
+                        <textarea required="" rows="3" placeholder="" class="input01" maxlength="1000"></textarea>
+                        <span>message</span>
+                    </label>
+            
+                    <button class="fancy" type="submit">
+                        <span class="top-key"></span>
+                        <span class="text">Enviar</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                    </button>
+                </form>
+        </div>
+
+        <br>
+        <hr size="1" width="100%" color="rgb(255,255,255)">
+
+        </div><!-- Conteiner -->
+        
+        <!-- Redes sociais -->
+        <div id="social" class="section">
+            <div class="social">
+                <a href="#"><i class="fi fi-brands-facebook"></i></a>
+                <a href="#"><i class="fi fi-brands-twitter"></i></a>
+                <a href="#"><i class="fi fi-brands-linkedin"></i></a>
+                <a href="#"><i class="fi fi-brands-github"></i></a>
+            </div>
+        </div>
+    <script src="_js/script.js"></script>
+    </body>
 </html>

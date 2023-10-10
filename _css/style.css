@@ -95,11 +95,5 @@
             width: 100%;
             height: auto;
         }
-        .projects a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .projects a:hover {
-          color:#0f0;  
-        }
+        
        

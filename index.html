@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Meu Portfólio</title>
-    <style>
-        /* Adicione seu código CSS aqui */
- 	 
-    </style>
-<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-<link rel="stylesheet" href="_css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="_css/style.css">
+    <title>BacoIpswich</title>
 </head>
+
 <body>
     <div class="container">
         
@@ -31,7 +30,8 @@
            </div>
            
        </div>
-       <hr size="1" width="100%" color="rgb(84,160,33)" >
+
+       <hr size="1" width="100%" color="rgb(84,160,33)">
 
     
        <!-- Sobre -->
@@ -51,12 +51,30 @@
        <div id="projetos" class="section">
            <h2>Meus projetos</h2>
            <div class="projects">
-               <a href="#"><img src="_img/site_estatico.png" alt="Site Estático"></a>
-               <a href="#"><img src="_img/site_dinâmico.png" alt="Site Dinâmico"></a>
-               <a href="#"><img src="_img/site_responsivo.png" alt="Site Responsivo"></a>
-               <a href="#"><img src="_img/site_gerenciável.png" alt="Site Gerenciável"></a>
-               <a href="#"><img src="_img/site_e-commerce.png" alt="Site e-commerce"></a>
-               <a href="#"><img src="_img/site_educacional.png" alt="Site educacional"></a>
+            <figure>
+               <img src="_img/site_estatico.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+               <figcaption>São páginas fixas que exibem o mesmo conteúdo para todos os usuários. Ideal para sites institucionais. O valor médio para desenvolvimento no Brasil é entre R$ 3 mil e R$ 5 mil.</figcaption>
+            </figure>
+            <figure>
+                <img src="_img/site_dinâmico.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                <figcaption>Páginas que permitem interação do usuário, como blogs e redes sociais. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
+             </figure>
+             <figure>
+                <img src="_img/site_responsivo.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                <figcaption>Adapta-se a diferentes tamanhos de tela, melhorando a experiência do usuário. O custo médio varia de R$ 1.500 a R$ 2.000</figcaption>
+             </figure>
+             <figure>
+                <img src="_img/site_gerenciável.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                <figcaption>Permite o gerenciamento de conteúdo pelo usuário, como um CMS. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
+             </figure>
+             <figure>
+                <img src="_img/site_e-commerce.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                <figcaption>Plataforma de venda online, como lojas virtuais. O custo médio varia de R$ 1.600 a R$ 12.000</figcaption>
+             </figure>
+             <figure>
+                <img src="_img/site_educacional.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                <figcaption>Focado em educação, como plataformas EAD. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
+             </figure>
            </div>
        </div>
 
@@ -82,8 +100,6 @@
     <a href="#"><i class="fi fi-brands-linkedin"></i></a>
     <a href="#"><i class="fi fi-brands-github"></i></a>
 </div>
-    <script>
-        // Adicione seu código JavaScript aqui
-    </script>
+<script src="_js/script.js"></script>
 </body>
 </html>

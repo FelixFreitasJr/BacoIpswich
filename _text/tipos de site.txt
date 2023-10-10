@@ -1,0 +1,8 @@
+Claro! Aqui estão as imagens que eu criei para você:
+
+Site estático: ![Site estático]
+Site dinâmico: ![Site dinâmico]
+Site responsivo: ![Site responsivo]
+Site gerenciável: ![Site gerenciável]
+Site e-commerce: ![Site e-commerce]
+Site educacional: ![Site educacional]

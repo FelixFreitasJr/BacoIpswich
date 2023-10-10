@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
     <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/style_form.css">
     <title>BacoIpswich</title>
 </head>
 
 <body>
-    <div class="container">
+    <div id="main-content" class="container">
         
        <!-- Cabeçalho -->
        <div class="menu">
@@ -17,13 +18,14 @@
                <a href="#inicio">Início</a>
                <a href="#sobre">Sobre</a>
                <a href="#projetos">Projetos</a>
+		<a href="#clientes">Clientes</a>
                <a href="#contato">Contato</a>
            </nav>
        </div>
 
        <!-- Início -->
        <div id="inicio" class="banner">
-           <img src="_img/logo.png" alt="Foto">
+           <img src="_img/_galeria/logo.png" alt="Foto">
            <div class="texto">	
                <h1>Bem-vindo ao portfólio BacoIpswich.</h1>
                <p>Descubra a inovação em cada pixel.</p>
@@ -52,27 +54,27 @@
            <h2>Meus projetos</h2>
            <div class="projects">
             <figure>
-               <img class="thumbnail" src="_img/site_estatico.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+               <img class="thumbnail" src="_img/_galeria/site_estatico.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
                <figcaption>São páginas fixas que exibem o mesmo conteúdo para todos os usuários. Ideal para sites institucionais. O valor médio para desenvolvimento no Brasil é entre R$ 3 mil e R$ 5 mil.</figcaption>
             </figure>
             <figure>
-                <img class="thumbnail" src="_img/site_dinâmico.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                <img class="thumbnail" src="_img/_galeria/site_dinâmico.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
                 <figcaption>Páginas que permitem interação do usuário, como blogs e redes sociais. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
              </figure>
              <figure>
-                <img class="thumbnail" src="_img/site_responsivo.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                <img class="thumbnail" src="_img/_galeria/site_responsivo.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
                 <figcaption>Adapta-se a diferentes tamanhos de tela, melhorando a experiência do usuário. O custo médio varia de R$ 1.500 a R$ 2.000</figcaption>
              </figure>
              <figure>
-                <img class="thumbnail" src="_img/site_gerenciável.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                <img class="thumbnail" src="_img/_galeria/site_gerenciável.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
                 <figcaption>Permite o gerenciamento de conteúdo pelo usuário, como um CMS. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
              </figure>
              <figure>
-                <img class="thumbnail" src="_img/site_e-commerce.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                <img class="thumbnail" src="_img/_galeria/site_e-commerce.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
                 <figcaption>Plataforma de venda online, como lojas virtuais. O custo médio varia de R$ 1.600 a R$ 12.000</figcaption>
              </figure>
              <figure>
-                <img class="thumbnail" src="_img/site_educacional.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
+                <img class="thumbnail" src="_img/_galeria/site_educacional.png" alt="Site Estático" onclick="abrirImagem(this.src, this.alt)"></a>
                 <figcaption>Focado em educação, como plataformas EAD. O valor médio varia entre R$ 400 e R$ 10.000</figcaption>
              </figure>
            </div>
@@ -81,29 +83,80 @@
             <img class="modal-content" id="img01">
             <div id="caption"></div>
         </div>
-        <div id="modal" class="modal">
-            <span class="close">&times;</span>
-            <img class="modal-content" id="img01">
-            <div id="caption"></div>
-        </div>
        </div>
 
+<br>
+<hr size="1" width="100%" color="rgb(84,160,33)" >
+<div id="clientes" class="section">
+	<h2>Clientes</h2>
+<div class="coins"><!-- Clientes -->
+	
+	<!-- Primeiro círculo -->
+	<div class="coin"> 
+		<div class="side1">
+			<img src="_img/_clientes/fiocruz.png" alt="Logo 1">
+		</div>
+		<div class="side2">
+			<img src="_img/_clientes/fiotec.png" alt="Logo 2">
+		</div>
+	</div>
+
+	<!-- Segundo círculo -->
+	<div class="coin">
+		<div class="side1">
+			<img src="_img/_clientes/g4f.png" alt="Logo 3">
+		</div>
+		<div class="side2">
+			<img src="_img/_clientes/uniasselvi.png" alt="Logo 4">
+		</div>
+	</div>
+</div>
+</div>
+<br>
+<hr size="1" width="100%" color="rgb(84,160,33)" >
        <!-- Contato -->
        <div id="contato" class="section">
            <h2>Entre em contato</h2>
-           <form action="#" method="post">
-               <label for="nome">Nome:</label>
-               <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>
-               <label for="email">E-mail:</label>
-               <input type="email" id="email" name="email" placeholder="Digite seu e-mail"><br>
-               <label for="mensagem">Mensagem:</label>
-               <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem"></textarea><br>
-               <button type="submit">Enviar</button>
-           </form>
+           <form class="form" id="meuFormulario" method="post" enctype="text/plain">
+    
+    
+        <label>
+            <input required="" placeholder="" type="text" class="input">
+            <span>Nome Próprio</span>
+        </label>
+            
+    <label>
+        <input required="" placeholder="" type="email" class="input">
+        <span>E-mail</span>
+    </label> 
+        
+    <label>
+        <input required="" type="tel" placeholder="" class="input" maxlength="15" onkeyup="formatarTelefone(this)" id="telefone">
+        <span>Contato</span>
+    </label>
+    <label>
+        <textarea required="" rows="3" placeholder="" class="input01" maxlength="1000"></textarea>
+        <span>message</span>
+    </label>
+    
+    <button class="fancy" type="submit">
+      <span class="top-key"></span>
+      <span class="text">Enviar</span>
+      <span class="bottom-key-1"></span>
+      <span class="bottom-key-2"></span>
+    </button>
+</form>
        </div>
 
     </div>
-<!-- Redes sociais -->
+<br>
+<div style="position: relative; z-index: 0;">
+  <hr size="1" width="100%" color="rgb(255,255,255)">
+</div>
+
+  <!-- Redes sociais -->
+       <div id="social" class="section">
+
 <div class="social">
     <a href="#"><i class="fi fi-brands-facebook"></i></a>
     <a href="#"><i class="fi fi-brands-twitter"></i></a>

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,800;1,300;1,800&display=swap');
+	
+
+        body {
+            background-image: url('../_img/fundo.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            color: rgb(84,160,33); /* cor de texto verde esmeralda */
+            font-family: 'Nunito', sans-serif; /* fonte Nunito */
+        }
+        .container {
+            margin: auto;
+            width: 80%;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed; /* menu fixo na tela */
+            right: 0;
+            top: 0;
+            width: 100%;
+            background-color: #222; /* cor de fundo do menu */
+        }
+        .menu a {
+            color: rgb(84,160,33);
+            text-decoration: none;
+            padding: 10px;
+        }
+        .menu a:hover {
+            color: #fff; /* cor de destaque do menu */
+        }
+        .banner {
+            display: flex;
+            align-items: center;
+            height: 300px;
+            margin-top: 40px; /* espaço entre o menu e o banner */
+        }
+        .banner img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .banner h1 {
+            font-size: 36px;
+        }
+        .banner p {
+            font-size: 18px;
+        }
+        .social {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+	    
+        }
+        .social a {
+            display: block;
+            width: 40px;
+            height: 40px;
+            background-color: rgb(84,160,33);
+            border-radius: 50%;
+            margin: 10px;
+        }
+        .social a i {
+            font-size: 24px;
+            color: #222;
+            line-height: 40px;
+            text-align: center;
+		align-items:center;
+
+        }
+        .section {
+            margin-top: 40px;
+        }
+        .section h2 {
+            font-size: 24px;
+            text-align: center;
+        }
+        .section p {
+            font-size: 16px;
+            text-align: justify;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .projects img {
+            width: 100%;
+            height: auto;
+        }
+        .projects a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .projects a:hover {
+          color:#0f0;  
+        }
+        
